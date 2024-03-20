@@ -1,0 +1,79 @@
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: inherit;
+}
+
+
+.full-width-header .rs-header .toolbar-area.topbar-style1 {
+    background-color: #1d75a1;
+}
+
+.full-width-header .rs-header.header-style1 .menu-area .main-menu .rs-menu ul.nav-menu li:hover > a {
+    color: #1d75a1 !important;
+}
+
+/* botão com borda */
+.full-width-header .rs-header.header-style1.header-modify1 .expand-btn-inner ul .btn-quote a,
+.readon.slide-started.more {
+    border-color: #1d75a1;
+}
+.full-width-header .rs-header.header-style1.header-modify1 .expand-btn-inner ul .btn-quote a::after,
+.readon.slide-started.more:after {
+    background-color: #1d75a1;
+}
+
+.sec-title .sub-text.big-text {
+    font-size: 18px;
+}
+.sec-title .sub-text {
+    color: #1d75a1;
+    margin: 0 0 5px;
+}
+
+ul.check-lists li:before {
+    color: #1d75a1;
+}
+
+.rs-services.services-style1 .services-item {
+    background-color: #bedae9;
+}
+.rs-services.services-style1 .services-item .services-wrap .services-content .title a:hover {
+    color: #1d75a1;
+}
+
+.rs-blog.blog-style1 .blog-item .blog-content .blog-meta .admin i,
+.rs-blog.blog-style1 .blog-item .blog-content .blog-meta .date i,
+.rs-blog.blog-style1 .blog-horizontal .blog-meta .blog-item-wrap .blog-content .blog-meta .admin i,
+.rs-blog.blog-style1 .blog-horizontal .blog-meta .blog-item-wrap .blog-content .blog-meta .date i {
+    color: #bedae9;
+}
+.rs-blog.blog-style1 .blog-horizontal .blog-meta .blog-item-wrap:hover .blog-content .blog-title a,
+.rs-blog.blog-style1 .blog-item .blog-content .blog-title a:hover {
+    color: #1d75a1;
+}
+
+
+/* ////////// HOME */
+
+.rs-partner.partner-main-home {
+    background-color: #bedae9;
+}
+
+.rs-testimonial.testimonial-style3.testimonial-modify1 {
+    box-sizing: border-box;
+    max-width: 1200px;
+    padding: 90px var(--bs-gutter-x, .75rem) 90px var(--bs-gutter-x, .75rem);
+    margin: 0 auto;
+}
+.rs-testimonial.testimonial-style3.testimonial-modify1 .testi-image {
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0px 0px 150px;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, .4);
+}
+.rs-testimonial.testimonial-style3 .widget-content {
+    background-color: #1d75a1;
+}
+.rs-testimonial.testimonial-style3.testimonial-modify1 .widget-content {
+    padding: 60px 40px 60px 40px;
+    border-radius: 0px 150px 0 0px;
+}
