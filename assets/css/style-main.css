@@ -525,6 +525,84 @@ ul.check-lists li:before {
 }
 
 
+/* ----- banner topo home */
+.banner-style9 {
+    background-image: url(../images/texture-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 120px 0 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.banner-style9:after {
+    background: linear-gradient(90deg, rgba(30,115,160,0.3) 10%, rgba(30,115,160,1) 100%);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    mix-blend-mode: multiply;
+}
+
+.banner-style9 .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 600px;
+}
+
+.banner-style9 .col.pop {
+    background-color: var(--cor-blue-dk);
+    box-sizing: border-box;
+    max-width: 42%;
+    padding: 40px 40px 90px 40px;
+    border-radius: 0 0 90px 0;
+}
+
+.banner-style9 .sub-title,
+.banner-style9 .title,
+.banner-style9 .col.pop > p {
+    color: #fff;
+}
+.banner-style9 .sub-title {
+    padding-bottom: 10px;
+}
+.banner-style9 .title {
+    font-size: 40px;
+}
+
+.banner-style9 .col.img {
+    box-sizing: border-box;
+    height: 100%;
+    padding-top: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.banner-style9 .col.img img {
+    min-height: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+    .banner-style9 {
+        border-radius: 0;
+    }
+    .banner-style9 .col.img {
+        display: none;
+    }
+    .banner-style9 .col.pop {
+        max-width: 80%;
+    }
+}
+
+
+
 /* ----- bloco de clientes HOME */
 .ico-dow {
     height: 40px;
@@ -534,6 +612,117 @@ ul.check-lists li:before {
     background-position: center;
     margin-top: 20px;
     opacity: .4;
+}
+
+
+/* ----- banner contador */
+.cp-counter {
+    overflow: hidden;
+    margin-left: 60px;
+    border-radius: 260px 0 0 0;
+}
+
+.cp-counter .wrap {
+    background-color: var(--cor-blue-dk);
+    padding-left: 90px;
+    position: relative;
+}
+.cp-counter .wrap:after {
+    content: "";
+    background-image: url(../images/texture-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.cp-counter .container {
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.cp-counter .counter-img {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: -110px;
+}
+
+.cp-counter .row {
+    position: relative;
+    z-index: 3;
+}
+
+.cp-counter .col {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    max-width: 260px;
+}
+
+.cp-counter .col .count-number {
+    text-align: center;
+    font-size: 45px;
+    white-space: nowrap;
+}
+
+.cp-counter .col .title {
+    text-align: center;
+    font-size: 38px;
+    line-height: 100%;
+    display: block;
+}
+
+@media only screen and (max-width: 1199px) {
+    .cp-counter {
+        margin-left: 20px;
+    }
+    .cp-counter .counter-img {
+        right: -80px;
+    }
+    .cp-counter .col .count-number {
+        font-size: 36px;
+    }
+    .cp-counter .col .title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .cp-counter {
+        margin-left: inherit;
+    }
+    .cp-counter .col {
+        max-width: 33.333%;
+    }
+    .cp-counter .counter-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .cp-counter .container,
+    .cp-counter .row {
+        display: block;
+    }
+    .cp-counter .row {
+        padding: 60px 0 60px;
+    }
+    .cp-counter .col {
+        max-width: 100%;
+        text-align: center;
+    }
+    .cp-counter .col:not(:last-child) {
+        padding-bottom: 40px;
+    }
 }
 
 
@@ -654,6 +843,13 @@ blockquote p cite:before {
     margin-right: 15px;
 }
 
+.rs-inner-blog .blog-item,
+.rs-inner-blog .widget-area .search-widget,
+.rs-inner-blog .widget-area .recent-posts {
+    border-radius: 8px;
+    box-shadow: 8px 8px 25px 9px rgba(0, 0, 0, 0.1);;
+}
+
 
 
 /* ///// BLOG-POST */
@@ -661,6 +857,12 @@ blockquote p cite:before {
 .rs-inner-blog .blog-details .blog-full .single-post-meta li .p-date i,
 blockquote:before {
     color: var(--cor-blue-dk);
+}
+
+.blog-details .bs-img.mb-35,
+.blog-details .bs-img.mb-30 {
+    border-radius: 90px 0 90px 0;
+    overflow: hidden;
 }
 
 
